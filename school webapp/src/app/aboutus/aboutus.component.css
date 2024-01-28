@@ -1,0 +1,23 @@
+.img{
+    margin-left: 500px;
+}
+.info{
+    padding-left: 20px;
+}
+.card{
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 30px;
+    
+}
+hr{
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+    color: grey;
+}
+
+.bd{
+    cursor: default;
+}
+

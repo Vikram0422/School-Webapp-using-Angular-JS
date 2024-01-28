@@ -1,0 +1,84 @@
+.att{
+  position:static;
+  padding-left: 44%;
+}
+
+.profile{
+  position: relative;
+  padding: 20px;
+  border-bottom: 50px;
+}
+.heading{
+  position: relative;
+  color: blueviolet;
+  left: 44%;
+  width: fit-content;
+  cursor: default;
+}
+.heading1{
+  position: relative;
+  color: blueviolet;
+  left: 44%;
+  margin-top: 3%;
+  width: fit-content;
+  cursor: default;
+}
+.heading3{
+  position: relative;
+  color: blueviolet;
+  left: 44%;
+  margin-top: 3%;
+  width: fit-content;
+  cursor: default;
+}
+
+.cont1{
+  position: relative;
+  width: fit-content;
+
+}
+.profile2{
+  position: absolute;
+  width: fit-content;
+  left: 62%;
+  top: 5%;
+  
+}
+
+.cont2{
+  position: relative;
+  width: fit-content;
+
+}
+
+.profile3{
+  position: absolute;
+  width: fit-content;
+  left: 62%;
+  top: 20%;
+  top: 5%;
+  
+}
+.cont3{
+  position: relative;
+  width: fit-content;
+
+}
+
+.profile4{
+  position: absolute;
+  width: fit-content;
+  left: 62%;
+  top: 20%;
+  top: 5%;
+  
+}
+.submit{
+  position: relative;
+  left: 44%;
+  margin-top: 3%;
+}
+
+.c{
+  cursor: default;
+}

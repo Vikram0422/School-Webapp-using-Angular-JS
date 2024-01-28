@@ -1,0 +1,86 @@
+.example-card {
+    max-width: 385px;
+  }
+
+.example-card:hover{
+    box-shadow: 0 8px 8px 8px rgba(0,0,0,.2), 0 8px 8px 0 rgba(0,0,0,.14), 0 8px 8px 0 rgba(0,0,0,.12) !important;
+    transform: translate3d(0,0,0);
+    transition: background .4s cubic-bezier(.25,.8,.25,1),box-shadow 280ms cubic-bezier(.4,0,.2,1);
+}
+
+  .title{
+    position: relative;
+    left: 25%;
+  }
+
+  .p2{
+    position: relative;
+    left: 60%;
+    margin-right: 55%;
+  }
+  
+  .p1{
+    position: relative;
+    bottom: -32px;
+    left: 30%;
+    margin-right: 55%;
+  }
+
+  .icon{
+    position: relative;
+    left: 80%;
+    bottom: 35px;
+    color: gray;
+  }
+
+  .icon:hover{
+    cursor: pointer;
+    color: #1CD6CE;
+
+  }
+
+  .re{
+    position: relative;
+    bottom: 30px;
+
+  }
+
+  .c2{
+    position: relative;
+    left: 50%;
+    bottom: 300px;
+    margin-right: 50%;
+  }
+
+  .c1{
+    position: relative;
+    top: 45px;
+    padding-left: 3%;
+    margin-right: 50%;
+  }
+
+  .c3{
+    position: relative;
+    padding-left: 3%;
+    bottom: 250px;
+    margin-right: 50%;
+  }
+
+  .c4{
+    position: relative;
+    left: 50%;
+    bottom: 595px;
+    margin-right: 50%;
+  }
+
+  .content{
+    height: 900px;
+    cursor: default;
+  }
+  .att{
+    position:static;
+    padding-left: 47%;
+  }
+
+  
+  

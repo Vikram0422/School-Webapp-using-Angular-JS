@@ -1,0 +1,28 @@
+
+<div class="login-wrapper">
+    <form action="" #f="ngForm" novalidate (ngSubmit)="f.form.valid&&onSubmit(formdata)" class="form">
+      <h2>Login</h2>
+      <div class="input-group">
+        <input type="text" class="inp" name="loginUser" id="loginUser" [(ngModel)]="formdata.username" #username="ngModel"  required />
+        <label for="loginUser">User Name *</label>
+        <span class="text-danger" *ngIf="this.submit&&username.errors?.['required']" >
+            username is required.
+        </span>
+      </div>
+      <div class="input-group">
+        <input class="inp"
+          type="password"
+          name="loginPassword"
+          id="loginPassword"
+          [(ngModel)]="formdata.password" #password="ngModel" 
+          required
+        />
+        <label for="loginPassword">Password *</label>
+        <span class="text-danger" *ngIf="this.submit&&password.errors?.['required']">
+            Password is required.
+        </span>
+      </div>
+      <div class="forget" routerLink="/forgotpassword">forgotpassword?</div>
+      <input type="submit" value="Login" class="submit-btn" (click)="submit=true" />
+    </form>
+  </div>

@@ -1,0 +1,39 @@
+<h3>
+    <mat-card class="title mat-elevation-z7"><h2>Feedback</h2></mat-card>
+</h3>
+<mat-card class="feed mat-elevation-z3">
+    <p class="para"><b>FEEDBACK</b></p>
+    <div class="feedback">
+        <form id="fcf-form-id" class="fcf-form-class" method="post" action="contact-form-process.php">
+            <mat-form-field appearance="fill" class="dropdown">
+                <mat-label>Category</mat-label>
+                <mat-select>
+                    <mat-option value="one">ERP</mat-option>
+                    <mat-option value="two">Infrastructure</mat-option>
+                    <mat-option value="two">Hostel</mat-option>
+                    <mat-option value="two">General</mat-option>
+                    <mat-option value="two">Academic</mat-option>
+                </mat-select>
+            </mat-form-field>
+            <mat-form-field appearance="fill" class="dropdown1">
+                <mat-label>To</mat-label>
+                <mat-select>
+                    <mat-option value="one">ERP</mat-option>
+                    <mat-option value="two">Infrastructure</mat-option>
+                    <mat-option value="two">Hostel</mat-option>
+                    <mat-option value="two">General</mat-option>
+                    <mat-option value="two">Academic</mat-option>
+                </mat-select>
+            </mat-form-field>
+            <div></div>
+            <mat-form-field class="input-box" appearance="fill">
+                <mat-label>Address 2</mat-label>
+                <textarea matInput></textarea>
+
+
+            </mat-form-field>
+            <button class="action" mat-raised-button>Cancel</button>
+            <button class="action1" mat-raised-button routerLink="/home/feedback">Send</button>
+        </form>
+    </div>
+</mat-card>

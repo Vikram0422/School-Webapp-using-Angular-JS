@@ -1,0 +1,60 @@
+
+
+  
+
+  .title{
+    position: static;
+    background-color: #277BC0;
+    color: whitesmoke;
+    height: 0;
+    margin-top: -30px;
+    padding-top: 30px;
+    padding-bottom: 100px;
+}
+.feedback{
+    margin-left: 50px;
+}
+.msg{
+  margin-top: 30px;
+}
+.feed{
+position: relative;
+margin-top: 7%;
+margin-left:15%;
+margin-right: 40%;
+padding-bottom: 10%;
+left: 10%;
+}
+.para{
+  text-align: center;
+  font-size:large;
+}
+.dropdown{
+  padding-left: 10%;
+  padding-top: 5%;
+ width: 70%;
+}
+.dropdown1{
+  padding-left: 10%;
+  padding-top: 1%;
+ width: 70%;
+}
+.input-box{
+  width: 70%;
+  padding-left: 10%;
+
+}
+.action{
+  position: absolute;
+  right:65%;
+  margin-top: 17%;
+
+ 
+}
+.action1{
+  position: absolute;
+  right:25%;
+  margin-top: 17%;
+
+ 
+}

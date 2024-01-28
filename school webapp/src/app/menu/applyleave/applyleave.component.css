@@ -1,0 +1,46 @@
+.example-margin {
+    position: relative;
+    margin: 0 12px;
+    font-size: 18px;
+    padding-top: 15px;
+    left: 70%;
+  }
+
+.mat {
+  
+    padding-top: 5%;
+    padding-left: 4%;
+  }
+  .mate {
+    padding-top: 1%;
+    padding-left: 4%;
+  }
+.example-full-width{
+  position: relative;
+  padding-top: 3%;
+  padding-left: 4%;
+  height: 20%;
+}
+
+.ltype{
+  padding-left: 4%;
+}
+
+.icon{
+padding-right: 2%;
+}
+.att{
+  position:static;
+  padding-left: 47%;
+}
+
+.inp{
+  color: black;
+}
+
+.example-button-row{
+  position: relative;
+  height: 40px;
+  margin-left: 550px;
+  bottom: -50px;
+}

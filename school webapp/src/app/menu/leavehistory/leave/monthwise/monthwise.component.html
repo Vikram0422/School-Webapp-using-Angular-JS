@@ -1,0 +1,18 @@
+<div class="mat">
+    <mat-form-field [style.width.px]=350 appearance="standard">
+      <mat-label>From Date</mat-label>
+      <input class="inp" matInput [matDatepicker]="picker1" [min]="minDate">
+      <mat-hint>MM/DD/YYYY</mat-hint>
+      <mat-datepicker-toggle matSuffix [for]="picker1"></mat-datepicker-toggle>
+      <mat-datepicker #picker1></mat-datepicker>
+    </mat-form-field>
+  </div>
+  <div class="mate">
+    <mat-form-field [style.width.px]=350 appearance="standard">
+      <mat-label>To Date</mat-label>
+      <input class="inp" matInput [matDatepicker]="picker2" [min]="minDate" >
+      <mat-hint>MM/DD/YYYY</mat-hint>
+      <mat-datepicker-toggle matSuffix [for]="picker2"></mat-datepicker-toggle>
+      <mat-datepicker #picker2 color="primary" ></mat-datepicker>
+    </mat-form-field>
+  </div>

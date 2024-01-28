@@ -1,0 +1,104 @@
+.container{
+  flex-wrap: nowrap;
+  margin-left: 40px;
+  margin-top: 20px;
+}
+.master{
+  position: relative;
+  width: 30%;
+  bottom: 180px;
+  margin-left: 700px;
+  margin-top: 70px;
+  cursor: default;
+}
+.calender{
+  padding-left: 30%;
+}
+
+.label{
+    color: black;
+    
+    
+}
+
+
+.inp{
+    color: black;
+}
+
+.hint{
+    color: black;
+    cursor: default;
+}
+
+.container2{
+  flex-wrap: nowrap;
+  margin-left: 40px;
+  margin-top: 150px;
+}
+.center{
+  padding-left: 30%;
+}
+.subcard{
+  position: relative;
+  margin-top: 5%;
+  width: 29%;
+  bottom: 145px;
+  left: 60%;
+}
+.calcard{
+  position: relative;
+  margin-top: 5%;
+  width: 29%;
+  right: 32%;
+}
+.card{
+  margin-left: 20px;
+}
+.heading3{
+  color: blueviolet;
+  margin-left: 500px;
+}
+.att{
+  position:static;
+  padding-left: 44%;
+}
+
+.c{
+  cursor: default;
+}
+
+.takeatt{
+  position: relative;
+  bottom: 145px;
+}
+
+.example-button-row{
+    padding-bottom: 5%;
+}
+
+.divider{
+  width: 100%;
+}
+
+table {
+  border: 1;
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td {
+  border-top: 1px solid #dddddd;
+  border-bottom: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+th {
+  border-top: 1px solid #dddddd;
+  border-bottom: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+

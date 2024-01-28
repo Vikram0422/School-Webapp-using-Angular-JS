@@ -1,0 +1,138 @@
+.title{
+    position: static;
+    background-color: #277BC0;
+    color: white;
+    height: 0;
+    margin-top: -30px;
+    padding-top: 35px;
+    padding-bottom: 15%;
+}
+
+.img1{
+   font-size: 100px;
+}
+
+.pad{
+   padding-top: 20px;
+}
+
+
+.content{
+   margin-top: -100px;
+}
+
+
+.example-full-width{
+   opacity: 2;
+   outline: none;
+  	border: 1px solid #CFD2CF;
+   height: 50px;
+   padding-left:40px;
+  margin-left: 400px;
+}
+
+.label{
+   color: #fff;
+}
+
+.toggle{
+   color: #fff;
+}
+
+
+html, body {
+   margin: 0;
+   padding: 0;
+ }
+
+ * {
+   box-sizing: border-box;
+ }
+
+ .slider {
+     width: 50%;
+     margin: 100px auto;
+ }
+
+ .slick-slide {
+   margin: 0px 20px;
+ }
+
+ .slick-slide img {
+   width: 100%;
+ }
+
+ .slick-prev:before,
+ .slick-next:before {
+   color: black;
+ }
+
+.inp{
+  color: white;
+}
+
+ .slick-slide {
+   transition: all ease-in-out .3s;
+   opacity: .2;
+ }
+
+ .slick-active {
+   opacity: .5;
+ }
+
+ .slick-current {
+   opacity: 1;
+ }
+
+.img{
+  width: 400px;
+  height: 300px;
+}
+ 
+.caro{
+
+  padding-left: 10px;
+
+}
+
+.slide-content-1 {
+  width: 82%;
+  background: linear-gradient(90deg, #1CB5E0 0%, #000821 100%);
+  text-align: center;
+}
+.slide-content-2 {
+ width: 82%;
+ background: linear-gradient(90deg, #3F2B96 0%, #A8C0FF 100%);
+ text-align: center;
+}
+.slide-content-3 {
+ width: 82%;
+ background: linear-gradient(90deg, #efd5ff 0%, #515ada 100%);
+ text-align: center;
+}
+.slide-content-4 {
+ width: 82%;
+ background: linear-gradient(90deg, #00d2ff 0%, #3a47d5 100%);
+ text-align: center;
+}
+.slide-content-5 {
+ width: 82%;
+ background: linear-gradient(90deg, #efd5ff 0%, #515ada 100%);
+ text-align: center;
+}
+.slide-content-6 {
+ width: 82%;
+ background: linear-gradient(90deg, #d3e7eb 0%, #d7ed17 100%);
+ text-align: center;
+}
+.slide-content-7 {
+ width: 82%;
+ background: linear-gradient(90deg, #d3e7eb 0%, #3a47d5 100%);
+ text-align: center;
+}
+.slide-content-8 {
+ width: 82%;
+ background: linear-gradient(90deg, #d3e7eb 0%, #376df8 100%);
+ text-align: center;
+}
+

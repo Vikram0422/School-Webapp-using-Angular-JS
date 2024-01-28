@@ -1,0 +1,60 @@
+.card-deck{
+  margin-left: 300px;
+
+}
+.card-body h5{
+  padding-left: 70px;
+}
+
+.card-footer small{
+  padding-bottom: 50px;
+  padding-left: 70px;
+}
+
+mat-grid-tile {
+  background: rgb(232, 249, 255);
+}
+.card-img-top{
+  position: relative;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  bottom: 7px;
+}
+
+.card-img-top.h3{
+  padding-bottom: 150px;
+}
+.pad{
+  padding-bottom: 5px;
+}
+.para{
+padding-left: 15px;
+}
+.list{
+padding-top: 30px;
+}
+.item{
+padding-top: 1%;
+}
+.list mat-divider{
+padding-top: 10px;
+}
+
+.item{
+color: gray;
+}
+
+.item:hover, .item:active {
+font-size: 130%;
+cursor: pointer;
+color: black;
+}
+
+
+.item:hover, .item:active{
+box-shadow: 0 8px 8px 8px rgba(0,0,0,.2), 0 8px 8px 0 rgba(0,0,0,.14), 0 8px 8px 0 rgba(0,0,0,.12) !important;
+  transform: translate3d(0,0,0);
+  transition: background .4s cubic-bezier(.25,.8,.25,1),box-shadow 280ms cubic-bezier(.4,0,.2,1);
+  cursor: pointer;
+}

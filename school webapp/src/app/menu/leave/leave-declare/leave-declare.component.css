@@ -1,0 +1,182 @@
+.leave{
+    margin-left: 85%;
+    margin-top: 3%;
+    padding-right: 3%;
+  }
+  th {
+    background-color: #21E1E1;
+    border: 1px solid #21E1E1;
+  }
+  .card{
+    position: relative;
+    width: 10%;
+    right: 5%;
+    margin-left: 35%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    padding-left: 2%;
+    padding-right: 27% ;
+  }
+  .cancel{
+    margin-left: 85%;
+    margin-top: 3%;
+    padding-right: 3%;
+  }
+  table {
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 7%;
+  }
+
+  .page{
+    position: relative;
+    right: 5%;
+  }
+  
+  tr.example-detail-row {
+    height: 0;
+  }
+  
+  tr.example-element-row:not(.example-expanded-row):hover {
+    background: whitesmoke;
+  }
+  
+  tr.example-element-row:not(.example-expanded-row):active {
+    background: #efefef;
+  }
+  
+  .example-element-row td {
+    border-bottom-width: 0;
+  }
+  
+  .example-element-detail {
+    overflow: hidden;
+    display: flex;
+  }
+  
+  .example-element-diagram {
+    min-width: 80px;
+    border: 2px solid black;
+    padding: 8px;
+    font-weight: lighter;
+    margin: 8px 0;
+    height: 104px;
+  }
+  
+  .example-element-symbol {
+    font-weight: bold;
+    font-size: 40px;
+    line-height: normal;
+  }
+  
+  .example-element-description {
+    padding: 16px;
+  }
+  
+  .example-element-description-attribution {
+    opacity: 0.5;
+    
+  }
+  
+  .img{
+    position: relative;
+    bottom: -25px;
+    width: 80%;
+    height: 30%;
+    border-radius: 50%;
+    
+  }
+  
+  .example-element-image{
+    width: 5%;
+  }
+  
+  .elementcancel{
+    position: relative;
+    left: 20%;
+    margin-left: 85%;
+    margin-top: 3%;
+    padding-right: 3%;
+    color: red;
+  }
+  
+  .tim{
+    color: orange;
+  }
+  
+  .appr{
+    color: green;
+  }
+  .head{
+    text-align: center;
+    margin-top: 2%;
+  }
+  .card-img-top{
+    position: relative;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    margin-top: 2%;
+    bottom: 7px;
+  }
+  
+  .para{
+    padding-left: 5%;
+  }
+  .button{
+    margin-left: 5%;
+    padding-bottom: -2%;
+  }
+  
+  .go{
+    position: relative;
+    margin-left: 47%;
+    margin-top: 2%;
+    
+    width: 7%;
+  }
+  
+  
+  .two{
+    position:relative;
+    margin-left: 4%;
+    margin-top: 2%;
+    
+  }
+  .one{
+    position:relative;
+    margin-left: 5%;
+    margin-top: 2%;
+    
+  }
+  .check{
+    position:relative;
+    left: 55%;
+    width: 6%;
+    bottom: 8%;  
+    
+  }
+  
+  .print{
+    position:relative;
+    bottom: 40%;
+      left: 91%;
+      width: 7%;
+    
+  }
+  .dat{
+      position:relative;
+      margin-left: 35%;
+      margin-top: 5%;
+      width: 30%;
+      
+  }
+  .fil{
+    position: relative;
+     margin-bottom: 15%;
+     left:70%;
+     bottom: 14%;
+  }
+  .tab{
+    bottom: 50%;
+  }

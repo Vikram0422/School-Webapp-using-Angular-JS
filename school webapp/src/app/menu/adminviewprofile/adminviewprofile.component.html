@@ -1,0 +1,43 @@
+<mat-tab-group mat-align-tabs="start" backgroundColor="primary" >
+  <mat-tab label="STAFF" class="table1" > <mat-grid-list cols="2" rowHeight="2:1">
+    <div class="search">
+      <mat-form-field [style.width.px]=300 appearance="standard" class="mat">
+        <input matInput placeholder="Search">
+        <mat-icon matPrefix>search</mat-icon>
+      </mat-form-field>
+    </div>
+    <div class="pad">
+    <mat-grid-tile> <button mat-raised-button class="raised" color="Basic" routerLink="/home/admin-report"><img class="card-img-top " width="200px" src="https://static01.nyt.com/images/2019/04/16/sports/16onsoccerweb-2/merlin_153612873_5bb119b9-8972-4087-b4fd-371cab8c5ba2-superJumbo.jpg?quality=75&auto=webp" alt="Card image cap" > <h3>Vikram<br>2015021</h3></button>
+    </mat-grid-tile>
+    <mat-grid-tile><button mat-raised-button class="raised" color="Basic" routerLink="/home/admin-report" ><img class="card-img-top" width="200px" src="https://static01.nyt.com/images/2019/04/16/sports/16onsoccerweb-2/merlin_153612873_5bb119b9-8972-4087-b4fd-371cab8c5ba2-superJumbo.jpg?quality=75&auto=webp"><h3>Vikram<br>2015021</h3></button></mat-grid-tile>
+    <mat-grid-tile><button mat-raised-button class="raised" color="Basic" routerLink="/home/admin-report" ><img class="card-img-top" width="200px" src="https://static01.nyt.com/images/2019/04/16/sports/16onsoccerweb-2/merlin_153612873_5bb119b9-8972-4087-b4fd-371cab8c5ba2-superJumbo.jpg?quality=75&auto=webp"><h3>Vikram<br>2015021</h3></button></mat-grid-tile>
+    <mat-grid-tile><button mat-raised-button class="raised" color="Basic" routerLink="/home/admin-report" ><img class="card-img-top" width="200px" src="https://static01.nyt.com/images/2019/04/16/sports/16onsoccerweb-2/merlin_153612873_5bb119b9-8972-4087-b4fd-371cab8c5ba2-superJumbo.jpg?quality=75&auto=webp" alt="Card image cap"><h3>Vikram<br>2015021</h3></button></mat-grid-tile>
+    <mat-grid-tile><button mat-raised-button class="raised" color="Basic" routerLink="/home/admin-report" ><img class="card-img-top" width="200px" src="https://static01.nyt.com/images/2019/04/16/sports/16onsoccerweb-2/merlin_153612873_5bb119b9-8972-4087-b4fd-371cab8c5ba2-superJumbo.jpg?quality=75&auto=webp"><h3>Vikram<br>2015021</h3></button></mat-grid-tile>
+    <mat-grid-tile><button mat-raised-button class="raised" color="Basic" routerLink="/home/admin-report" ><img class="card-img-top" width="200px" src="https://static01.nyt.com/images/2019/04/16/sports/16onsoccerweb-2/merlin_153612873_5bb119b9-8972-4087-b4fd-371cab8c5ba2-superJumbo.jpg?quality=75&auto=webp"><h3>Vikram<br>2015021</h3></button></mat-grid-tile>
+    </div>
+  </mat-grid-list> </mat-tab>
+  <mat-tab label="STUDENT" class="table1" >  <mat-grid-list cols="2" rowHeight="2:1">
+    <div class="search1">
+      <mat-form-field [style.width.px]=300 appearance="standard">
+        <input matInput placeholder="Search">
+        <mat-icon matPrefix>search</mat-icon>
+      </mat-form-field>
+    
+    <mat-form-field appearance="fill" class="class">
+      <mat-label>Classes</mat-label>
+      <mat-select>
+        <mat-option>None</mat-option>
+        <mat-option *ngFor="let class of classes" [value]="class">{{class}}</mat-option>
+      </mat-select>
+    </mat-form-field>
+  </div>
+    <div class="pad">
+    <mat-grid-tile> <button class="raised" mat-raised-button color="Basic" routerLink="/home/admin-report-student" ><img class="card-img-top" width="200px" src="https://static01.nyt.com/images/2019/04/16/sports/16onsoccerweb-2/merlin_153612873_5bb119b9-8972-4087-b4fd-371cab8c5ba2-superJumbo.jpg?quality=75&auto=webp" alt="Card image cap" ><h3>Vikram<br>2015021</h3></button></mat-grid-tile>
+    <mat-grid-tile><button class="raised" mat-raised-button color="Basic"routerLink="/home/admin-report-student" ><img class="card-img-top" width="200px" src="https://static01.nyt.com/images/2019/04/16/sports/16onsoccerweb-2/merlin_153612873_5bb119b9-8972-4087-b4fd-371cab8c5ba2-superJumbo.jpg?quality=75&auto=webp"><h3>Vikram<br>2015021</h3></button></mat-grid-tile>
+    <mat-grid-tile><button class="raised" mat-raised-button color="Basic"routerLink="/home/admin-report-student" ><img class="card-img-top" width="200px" src="https://static01.nyt.com/images/2019/04/16/sports/16onsoccerweb-2/merlin_153612873_5bb119b9-8972-4087-b4fd-371cab8c5ba2-superJumbo.jpg?quality=75&auto=webp"><h3>Vikram<br>2015021</h3></button></mat-grid-tile>
+    <mat-grid-tile><button class="raised" mat-raised-button color="Basic" routerLink="/home/admin-report-student" ><img class="card-img-top" width="200px" src="https://static01.nyt.com/images/2019/04/16/sports/16onsoccerweb-2/merlin_153612873_5bb119b9-8972-4087-b4fd-371cab8c5ba2-superJumbo.jpg?quality=75&auto=webp" alt="Card image cap"><h3>Vikram<br>2015021</h3></button></mat-grid-tile>
+    <mat-grid-tile><button class="raised" mat-raised-button color="Basic"routerLink="/home/admin-report-student" ><img class="card-img-top" width="200px" src="https://static01.nyt.com/images/2019/04/16/sports/16onsoccerweb-2/merlin_153612873_5bb119b9-8972-4087-b4fd-371cab8c5ba2-superJumbo.jpg?quality=75&auto=webp"><h3>Vikram<br>2015021</h3></button></mat-grid-tile>
+    <mat-grid-tile><button class="raised" mat-raised-button color="Basic"routerLink="/home/admin-report-student" ><img class="card-img-top" width="200px" src="https://static01.nyt.com/images/2019/04/16/sports/16onsoccerweb-2/merlin_153612873_5bb119b9-8972-4087-b4fd-371cab8c5ba2-superJumbo.jpg?quality=75&auto=webp"><h3>Vikram<br>2015021</h3></button></mat-grid-tile>
+  </div>
+  </mat-grid-list> </mat-tab>'
+</mat-tab-group>

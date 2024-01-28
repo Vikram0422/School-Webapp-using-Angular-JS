@@ -1,0 +1,30 @@
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 10px;
+
+  }
+ 
+  .item{
+    /* flex: 0 30%; */
+    margin: 2%;
+  }
+
+  .mat-card{
+      box-shadow: none;
+  }
+  .AE{
+    margin-left: 40PX;
+    cursor: default;
+  }
+
+  .rad{
+    border-radius: 70px;
+  }
+
+  .raised:hover{
+    box-shadow: 0 8px 8px 8px rgba(0,0,0,.2), 0 8px 8px 0 rgba(0,0,0,.14), 0 8px 8px 0 rgba(0,0,0,.12) !important;
+    transform: translate3d(0,0,0);
+    transition: background .4s cubic-bezier(.25,.8,.25,1),box-shadow 280ms cubic-bezier(.4,0,.2,1);
+  }

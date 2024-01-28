@@ -1,0 +1,94 @@
+<body class="bd">
+  <mat-tab-group [backgroundColor]="'primary'" [color]="'warn'">
+    <mat-tab [label]="'COMMUNITY'">
+        <table mat-table [dataSource]="dataSource1" class="mat-elevation-z8">
+            <ng-container matColumnDef="Class">
+                <th mat-header-cell *matHeaderCellDef> Class </th>
+                <td mat-cell *matCellDef="let element"> {{element.Class}} </td>
+            </ng-container>
+            
+            <ng-container matColumnDef="BC">
+                <th mat-header-cell *matHeaderCellDef> BC </th>
+                <td mat-cell *matCellDef="let element"> {{element.BC}} </td>
+              </ng-container>
+            
+             
+              <ng-container matColumnDef="BCM">
+                <th mat-header-cell *matHeaderCellDef> BCM </th>
+                <td mat-cell *matCellDef="let element"> {{element.BCM}} </td>
+              </ng-container>
+            
+            
+              <ng-container matColumnDef="DCN">
+                <th mat-header-cell *matHeaderCellDef> DCN </th>
+                <td mat-cell *matCellDef="let element"> {{element.DCN}} </td>
+              </ng-container>
+            
+              <ng-container matColumnDef="MBC">
+                <th mat-header-cell *matHeaderCellDef> MBC </th>
+                <td mat-cell *matCellDef="let element"> {{element.MBC}} </td>
+              </ng-container>
+            
+              <ng-container matColumnDef="OC">
+                <th mat-header-cell *matHeaderCellDef> OC </th>
+                <td mat-cell *matCellDef="let element"> {{element.OC}} </td>
+              </ng-container>
+            
+              <ng-container matColumnDef="SC">
+                <th mat-header-cell *matHeaderCellDef> SC </th>
+                <td mat-cell *matCellDef="let element"> {{element.SC}} </td>
+              </ng-container>
+            
+              <tr mat-header-row *matHeaderRowDef="displayedColumns1"></tr>
+              <tr mat-row *matRowDef="let row; columns: displayedColumns1;"></tr>
+            </table>
+
+    </mat-tab>
+    <mat-tab [label]="'GENDER'">
+        <table mat-table [dataSource]="dataSource2" class="mat-elevation-z8">
+            <ng-container matColumnDef="Class">
+                <th mat-header-cell *matHeaderCellDef> Class </th>
+                <td mat-cell *matCellDef="let element"> {{element.Class}} </td>
+            </ng-container>
+            
+            <ng-container matColumnDef="Male">
+                <th mat-header-cell *matHeaderCellDef> Male </th>
+                <td mat-cell *matCellDef="let element"> {{element.Male}} </td>
+              </ng-container>
+            
+             
+              <ng-container matColumnDef="Female">
+                <th mat-header-cell *matHeaderCellDef> Female </th>
+                <td mat-cell *matCellDef="let element"> {{element.Female}} </td>
+              </ng-container>
+            
+              <tr mat-header-row *matHeaderRowDef="displayedColumns2"></tr>
+              <tr mat-row *matRowDef="let row; columns: displayedColumns2;"></tr>
+            </table>
+
+    </mat-tab>
+    <mat-tab [label]="'DISTRICT'">
+        <table mat-table [dataSource]="dataSource3" class="mat-elevation-z8">
+            <ng-container matColumnDef="SNO">
+                <th mat-header-cell *matHeaderCellDef> SNO </th>
+                <td mat-cell *matCellDef="let element"> {{element.SNO}} </td>
+            </ng-container>
+            
+            <ng-container matColumnDef="District">
+                <th mat-header-cell *matHeaderCellDef> DISTRICT NAME </th>
+                <td mat-cell *matCellDef="let element"> {{element.District}} </td>
+              </ng-container>
+            
+             
+              <ng-container matColumnDef="Count">
+                <th mat-header-cell *matHeaderCellDef> COUNT </th>
+                <td mat-cell *matCellDef="let element"> {{element.Count}} </td>
+              </ng-container>
+            
+              <tr mat-header-row *matHeaderRowDef="displayedColumns3"></tr>
+              <tr mat-row *matRowDef="let row; columns: displayedColumns3;"></tr>
+            </table>
+
+    </mat-tab>
+</mat-tab-group>
+</body>

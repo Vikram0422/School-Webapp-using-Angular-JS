@@ -1,0 +1,47 @@
+<div class="wh-page">
+    <div class="picker">
+      <mat-form-field class="dat" appearance="fill">
+        <mat-label>Choose a date</mat-label>
+        <input matInput [matDatepicker]="picker">
+        <mat-hint>MM/DD/YYYY</mat-hint>
+        <mat-datepicker-toggle matSuffix [for]="picker">
+          <mat-icon matDatepickerToggleIcon>keyboard_arrow_down</mat-icon>
+        </mat-datepicker-toggle>
+        <mat-datepicker #picker></mat-datepicker>
+      </mat-form-field>
+    </div>
+    <div class="go">
+      <button mat-raised-button color="primary">Go</button>
+    </div>
+
+    <div>
+      <mat-form-field class="one" appearance="fill">
+        <mat-label>Select</mat-label>
+        <mat-select>
+          <mat-option value="one">First option</mat-option>
+          <mat-option value="two">Second option</mat-option>
+        </mat-select>
+      </mat-form-field>
+    </div>
+    <div>
+      <mat-form-field class="two" appearance="fill">
+
+        <mat-label>Select</mat-label>
+        <mat-select>
+          <mat-option value="one">First option</mat-option>
+          <mat-option value="two">Second option</mat-option>
+        </mat-select>
+      </mat-form-field>
+    </div>
+  </div>
+  <mat-checkbox class="example-margin">Show Absent Only</mat-checkbox>
+  <div class="filter">
+
+    <button class="fil" mat-mini-fab color="primary" aria-label="Example icon button with a filter list icon">
+      <mat-icon>filter_list</mat-icon>
+    </button>
+    <div class="print">
+      <button mat-raised-button color="primary">Print</button>
+    </div>
+
+  </div>

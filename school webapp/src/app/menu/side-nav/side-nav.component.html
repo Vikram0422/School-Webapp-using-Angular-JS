@@ -1,0 +1,14 @@
+<div class="navigation-panel">
+  <img class="logo" src="assets\images\logo.jpg" alt="LOGO">
+  <hr>
+  <ul class="navigation-panel-menu" *ngIf="links && links.length > 0">
+    <li *ngFor="let link of links">
+      <a [routerLink]="link.url" 
+          [routerLinkActive]="['active']"
+          [routerLinkActiveOptions]="{exact: true}">
+        <i [ngClass]="link.iconClass"></i>
+        <span [ngClass]="currentPanelState">{{ link.text }}</span>
+      </a>
+    </li>
+  </ul>
+</div>

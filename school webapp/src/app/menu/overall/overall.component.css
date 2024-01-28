@@ -1,0 +1,38 @@
+.head{
+    text-align: center;
+    padding-top: 2%;
+}
+.select{
+    margin-left: 35%;
+    margin-top: 2%;
+    width: 30%;
+}
+.title{
+    text-align: center;
+
+}
+.sub{
+    text-align: center;
+    padding-top: 3%;
+}
+.card{
+    padding-top: 3%;
+}
+
+.card:hover, .card:active {
+    font-size: 200%;
+    color: black;
+  }
+  .card:hover, .card:active{
+    box-shadow: 0 8px 8px 8px rgba(0,0,0,.2), 0 8px 8px 0 rgba(0,0,0,.14), 0 8px 8px 0 rgba(0,0,0,.12) !important;
+      transform: translate3d(0,0,0);
+      transition: background .4s cubic-bezier(.25,.8,.25,1),box-shadow 280ms cubic-bezier(.4,0,.2,1);
+  }
+  .att{
+    position:static;
+    padding-left: 47%;
+  }
+
+.bd{
+    cursor: default;
+}

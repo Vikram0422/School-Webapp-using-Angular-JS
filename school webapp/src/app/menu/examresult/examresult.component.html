@@ -1,0 +1,49 @@
+<body class="bd">
+    <mat-tab-group [backgroundColor]="'primary'" [color]="'warn'">
+      <mat-tab [label]="'EXAM RESULTS'">
+          <table mat-table [dataSource]="dataSource11" class="mat-elevation-z8">
+             
+              <ng-container matColumnDef="ID">
+                  <th mat-header-cell *matHeaderCellDef>ID</th>
+                  <td mat-cell *matCellDef="let element"> {{element.ID}} </td>
+                </ng-container>
+              
+               
+                <ng-container matColumnDef="NAME">
+                  <th mat-header-cell *matHeaderCellDef> NAME </th>
+                  <td mat-cell *matCellDef="let element"> {{element.NAME}} </td>
+                </ng-container>
+              
+              
+                <ng-container matColumnDef="ENGLISH">
+                  <th mat-header-cell *matHeaderCellDef> English </th>
+                  <td mat-cell *matCellDef="let element"> {{element.ENGLISH}} </td>
+                </ng-container>
+              
+                <ng-container matColumnDef="TAMIL">
+                  <th mat-header-cell *matHeaderCellDef> TAMIL </th>
+                  <td mat-cell *matCellDef="let element"> {{element.TAMIL}} </td>
+                </ng-container>
+              
+                <ng-container matColumnDef="MATHEMATICS">
+                  <th mat-header-cell *matHeaderCellDef>MATHEMATICS</th>
+                  <td mat-cell *matCellDef="let element"> {{element.MATHEMATICS}} </td>
+                </ng-container>
+              
+                <ng-container matColumnDef="SCIENCE">
+                  <th mat-header-cell *matHeaderCellDef> SCIENCE </th>
+                  <td mat-cell *matCellDef="let element"> {{element.SCIENCE}} </td>
+                </ng-container>
+
+                <ng-container matColumnDef="SOCIAL_SCIENCE">
+                  <th mat-header-cell *matHeaderCellDef> SOCIAL SCIENCE </th>
+                  <td mat-cell *matCellDef="let element"> {{element.SOCIAL_SCIENCE}} </td>
+                </ng-container>
+              
+                <tr mat-header-row *matHeaderRowDef="displayedColumns11"></tr>
+                <tr mat-row *matRowDef="let row; columns: displayedColumns11;"></tr>
+              </table>
+        </mat-tab>
+  </mat-tab-group>
+  </body>
+  

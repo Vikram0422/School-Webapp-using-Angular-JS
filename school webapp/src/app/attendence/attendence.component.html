@@ -1,0 +1,222 @@
+<p>
+  <mat-toolbar color="primary">
+
+    <span class="att">Attentance</span>
+    <span class="example-spacer"></span>
+
+  </mat-toolbar>
+</p>
+
+<div>
+  <div class="calender">
+    <mat-card class="calcard mat-elevation-z5">
+      <mat-form-field appearance="fill" class="ok">
+        <mat-label class="label">Choose a date</mat-label>
+        <input class="inp" matInput [matDatepicker]="picker" [matDatepickerFilter]="myFilter" [min]="minDate" disabled
+          (dateInput)="addEvent('input', $event)" (dateChange)="addEvent('change', $event)">
+        <mat-hint class="hint">MM/DD/YYYY</mat-hint>
+        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+        <mat-datepicker #picker disabled="false"></mat-datepicker>
+      </mat-form-field>
+    </mat-card>
+  </div>
+</div>
+
+<!-- <mat-divider></mat-divider> -->
+<div class="center">
+  <div class="container" *ngIf="isHourSelected">
+    <mat-card class="subcard mat-elevation-z5">
+      <form>
+        <mat-form-field appearance="fill">
+          <mat-label>Select Hour</mat-label>
+          <mat-select [(ngModel)]="selectedValue" name="food">
+            <mat-option *ngFor="let food of foods" [value]="food.value" (click)="hourSelect(food)">
+              {{food.viewValue}}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+        <p class="c"> Selected Hour: {{selectedValue}} </p>
+      </form>
+    </mat-card>
+
+
+  </div>
+</div>
+<br>
+
+<div *ngIf="isAttendence">
+  <p class="master">
+    <b>Master:</b>
+    <mat-button-toggle-group name="fontStyle" aria-label="Font Style">
+      <mat-button-toggle class="present"  (click)="Pchange()" value="present">P</mat-button-toggle>
+      <mat-button-toggle class="Absent"  (click)="Achange()" value="Absent">A</mat-button-toggle>
+      <mat-button-toggle class="off-day"  (click)="Ochange()" value="off-day">O</mat-button-toggle>
+    </mat-button-toggle-group>
+  </p>
+  <!-- <mat-list>
+    <div class="takeatt">
+      <table>
+        <thead>
+          <th>Student Name</th>
+          <th> Attendence Status</th>
+        </thead>
+        <br>
+        <tbody>
+          <mat-list-item>
+            <tr>
+              <td>Kishore</td>
+              <td>
+                <mat-button-toggle-group name="fontStyle" aria-label="Font Style">
+                  <mat-button-toggle [checked]="Pselect" value="present">P</mat-button-toggle>
+                  <mat-button-toggle [checked]="Aselect" value="Absent">A</mat-button-toggle>
+                  <mat-button-toggle [checked]="Oselect" value="off-day">O</mat-button-toggle>
+                </mat-button-toggle-group>
+              </td>
+            </tr>
+          </mat-list-item>
+          <mat-divider class="divider"></mat-divider>
+          <mat-list-item>
+            <tr>
+              <td>sam</td>
+              <td>
+                <mat-button-toggle-group name="fontStyle" aria-label="Font Style">
+                  <mat-button-toggle [checked]="Pselect" value="present">P</mat-button-toggle>
+                  <mat-button-toggle [checked]="Aselect" value="Absent">A</mat-button-toggle>
+                  <mat-button-toggle [checked]="Oselect" value="off-day">O</mat-button-toggle>
+                </mat-button-toggle-group>
+              </td>
+            </tr>
+          </mat-list-item>
+          <mat-divider></mat-divider>
+          <mat-list-item>
+            <tr>
+              <td>vikram</td>
+              <td>
+                <mat-button-toggle-group name="fontStyle" aria-label="Font Style">
+                  <mat-button-toggle [checked]="Pselect" value="present">P</mat-button-toggle>
+                  <mat-button-toggle [checked]="Aselect" value="Absent">A</mat-button-toggle>
+                  <mat-button-toggle [checked]="Oselect" value="off-day">O</mat-button-toggle>
+                </mat-button-toggle-group>
+              </td>
+            </tr>
+          </mat-list-item>
+          <mat-divider></mat-divider>
+          <mat-list-item>
+            <tr>
+              <td>Akash</td>
+              <td>
+                <mat-button-toggle-group name="fontStyle" aria-label="Font Style">
+                  <mat-button-toggle [checked]="Pselect" value="present">P</mat-button-toggle>
+                  <mat-button-toggle [checked]="Aselect" value="Absent">A</mat-button-toggle>
+                  <mat-button-toggle [checked]="Oselect" value="off-day">O</mat-button-toggle>
+                </mat-button-toggle-group>
+              </td>
+            </tr>
+          </mat-list-item>
+          <mat-divider></mat-divider>
+          <mat-list-item>
+            <tr>
+              <td>Jachin</td>
+              <td>
+                <mat-button-toggle-group name="fontStyle" aria-label="Font Style">
+                  <mat-button-toggle [checked]="Pselect" value="present">P</mat-button-toggle>
+                  <mat-button-toggle [checked]="Aselect" value="Absent">A</mat-button-toggle>
+                  <mat-button-toggle [checked]="Oselect" value="off-day">O</mat-button-toggle>
+                </mat-button-toggle-group>
+              </td>
+            </tr>
+          </mat-list-item>
+          <mat-divider></mat-divider>
+          <mat-list-item>
+            <tr>
+              <td>Rajesh</td>
+              <td>
+                <mat-button-toggle-group name="fontStyle" aria-label="Font Style">
+                  <mat-button-toggle [checked]="Pselect" value="present">P</mat-button-toggle>
+                  <mat-button-toggle [checked]="Aselect" value="Absent">A</mat-button-toggle>
+                  <mat-button-toggle [checked]="Oselect" value="off-day">O</mat-button-toggle>
+                </mat-button-toggle-group>
+              </td>
+            </tr>
+          </mat-list-item>
+        </tbody>
+      </table>
+    </div>
+  </mat-list> -->
+  <div class="takeatt">
+    <table>
+      <thead>
+        <tr>
+        <th>Student Name</th>
+        <th style="text-align: center;"> Attendence Status</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Kishore</td>
+          <td style="text-align: center;">
+            <mat-button-toggle-group  name="fontStyle" aria-label="Font Style">
+              <mat-button-toggle [checked]="Pselect" value="present">P</mat-button-toggle>
+              <mat-button-toggle [checked]="Aselect" value="Absent">A</mat-button-toggle>
+              <mat-button-toggle [checked]="Oselect" value="off-day">O</mat-button-toggle>
+            </mat-button-toggle-group>
+          </td>
+        </tr>
+        <tr>
+          <td>sam</td>
+          <td style="text-align: center;">
+            <mat-button-toggle-group name="fontStyle" aria-label="Font Style">
+              <mat-button-toggle  [checked]="Pselect" value="present">P</mat-button-toggle>
+              <mat-button-toggle  [checked]="Aselect" value="Absent">A</mat-button-toggle>
+              <mat-button-toggle  [checked]="Oselect" value="off-day">O</mat-button-toggle>
+            </mat-button-toggle-group>
+          </td>
+        </tr>
+        <tr>
+          <td>vikram</td>
+          <td style="text-align: center;">
+            <mat-button-toggle-group name="fontStyle" aria-label="Font Style">
+              <mat-button-toggle  [checked]="Pselect" value="present">P</mat-button-toggle>
+              <mat-button-toggle  [checked]="Aselect" value="Absent">A</mat-button-toggle>
+              <mat-button-toggle  [checked]="Oselect" value="off-day">O</mat-button-toggle>
+            </mat-button-toggle-group>
+          </td>
+        </tr>
+        <tr>
+          <td>Akash</td>
+          <td style="text-align: center;">
+            <mat-button-toggle-group name="fontStyle" aria-label="Font Style">
+              <mat-button-toggle  [checked]="Pselect" value="present">P</mat-button-toggle>
+              <mat-button-toggle  [checked]="Aselect" value="Absent">A</mat-button-toggle>
+              <mat-button-toggle  [checked]="Oselect" value="off-day">O</mat-button-toggle>
+            </mat-button-toggle-group>
+          </td>
+        </tr>
+        <tr>
+          <td>Jachin</td>
+          <td style="text-align: center;">
+            <mat-button-toggle-group name="fontStyle" aria-label="Font Style">
+              <mat-button-toggle  [checked]="Pselect" value="present">P</mat-button-toggle>
+              <mat-button-toggle  [checked]="Aselect" value="Absent">A</mat-button-toggle>
+              <mat-button-toggle  [checked]="Oselect" value="off-day">O</mat-button-toggle>
+            </mat-button-toggle-group>
+          </td>
+        </tr>
+        <tr>
+          <td>Rajesh</td>
+          <td style="text-align: center;">
+            <mat-button-toggle-group name="fontStyle" aria-label="Font Style">
+              <mat-button-toggle [checked]="Pselect" value="present">P</mat-button-toggle>
+              <mat-button-toggle [checked]="Aselect" value="Absent">A</mat-button-toggle>
+              <mat-button-toggle [checked]="Oselect" value="off-day">O</mat-button-toggle>
+            </mat-button-toggle-group>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="example-button-row">
+    <button mat-flat-button color="primary" style="height: 40px;margin-left: 500px;" routerLink="ds">Take
+      Attendence</button>
+  </div>
+</div>

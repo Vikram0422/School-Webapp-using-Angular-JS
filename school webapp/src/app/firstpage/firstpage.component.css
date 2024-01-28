@@ -1,0 +1,99 @@
+.title{
+    position: static;
+    background-color: #277BC0;
+    color: whitesmoke;
+    height: 0;
+    margin-top: -30px;
+    padding-top: 30px;
+    padding-bottom: 20%;
+    cursor: default;
+}
+
+.bd{
+    position:relative;
+    height: 100%;
+    width: 99%;
+}
+
+.att{
+    position: absolute;
+    padding-left: 2%;
+    padding-bottom:7%;
+    margin-left: 2%;
+    margin-top: 10%;
+    width: 280px;
+    top: 30%;
+
+    
+}
+.cl1{
+    color: orange;
+    position: absolute;
+    font-size: 380%;
+    width: 20%;
+    height: fit-content;
+    margin-left: 70%;
+  
+}
+.ex{
+    position: absolute;
+    padding-left: 30px;
+    padding-bottom: 7%;
+    margin-top: 10%;
+    margin-left: 35%;
+    width: 280px;
+    top: 30%;
+
+}
+.cl2{
+    color: lightskyblue;
+    position: absolute;
+    font-size: 380%;
+    width: 20%;
+    height: fit-content;
+    margin-left:70%;
+   
+}
+.dis{
+    position: absolute;
+    padding-left: 30px;
+    padding-bottom: 7%;
+    margin-left: 70%;
+    margin-top: 10%;
+    width: 280px;
+    top: 30%;
+
+}
+.cl3{
+    color: blue;
+    position: absolute;
+    font-size: 380%;
+    width: 20%;
+    height: fit-content;
+    margin-left: 70%;
+    
+}
+
+.att:hover {
+    box-shadow: 0 8px 8px 8px rgba(0,0,0,.2), 0 8px 8px 0 rgba(0,0,0,.14), 0 8px 8px 0 rgba(0,0,0,.12) !important;
+    transform: translate3d(0,0,0);
+    transition: background .4s cubic-bezier(.25,.8,.25,1),box-shadow 280ms cubic-bezier(.4,0,.2,1);
+    cursor: pointer;
+    color: gray;
+}
+
+.ex:hover {
+    box-shadow: 0 8px 8px 8px rgba(0,0,0,.2), 0 8px 8px 0 rgba(0,0,0,.14), 0 8px 8px 0 rgba(0,0,0,.12) !important;
+    transform: translate3d(0,0,0);
+    transition: background .4s cubic-bezier(.25,.8,.25,1),box-shadow 280ms cubic-bezier(.4,0,.2,1);
+    cursor: pointer;
+    color: gray;
+}
+
+.dis:hover {
+    box-shadow: 0 8px 8px 8px rgba(0,0,0,.2), 0 8px 8px 0 rgba(0,0,0,.14), 0 8px 8px 0 rgba(0,0,0,.12) !important;
+    transform: translate3d(0,0,0);
+    transition: background .4s cubic-bezier(.25,.8,.25,1),box-shadow 280ms cubic-bezier(.4,0,.2,1);
+    cursor: pointer;
+    color: gray;
+}

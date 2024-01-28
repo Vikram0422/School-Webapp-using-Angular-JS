@@ -1,0 +1,47 @@
+.card-deck{
+  margin-left: 300px;
+
+}
+.card-body h5{
+  padding-left: 70px;
+}
+
+.card-footer small{
+  padding-bottom: 50px;
+  padding-left: 70px;
+}
+
+mat-grid-tile {
+  background: rgb(232, 249, 255);
+}
+.card-img-top{
+  height: 170px;
+  border-radius: 50%;
+}
+
+.card-img-top.h3{
+  padding-bottom: 150px;
+}
+.pad{
+  padding-bottom: 5px;
+}
+
+.search{
+  padding-left: 400px;
+  background: rgb(232, 249, 255);
+}
+.search1{
+padding-left: 10px;
+background: rgb(232, 249, 255);
+}
+.class{
+padding-left: 40%;
+background: rgb(232, 249, 255);
+}
+
+.raised:hover{
+box-shadow: 0 8px 8px 8px rgba(0,0,0,.2), 0 8px 8px 0 rgba(0,0,0,.14), 0 8px 8px 0 rgba(0,0,0,.12) !important;
+transform: translate3d(0,0,0);
+transition: background .4s cubic-bezier(.25,.8,.25,1),box-shadow 280ms cubic-bezier(.4,0,.2,1);
+color: gray;
+}

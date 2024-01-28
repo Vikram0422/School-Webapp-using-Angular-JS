@@ -1,0 +1,45 @@
+.head{
+    text-align: center;
+    margin-top: 2%;
+}
+
+.card-img-top{
+    position: relative;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    margin-top: 2%;
+    bottom: 7px;
+}
+
+.para{
+    padding-left: 5%;
+}
+
+.button{
+    margin-left: 5%;
+    padding-bottom: -2%;
+}
+
+.lpl-container{
+    display: flex;
+
+  }
+  
+  .lpl-container > div {
+    padding: 5px;
+   
+  }
+  .chips{
+    /* padding-top: 1%;
+    padding-left: 1%;
+    padding-right: 1%; */
+    padding: 1%;
+    margin-bottom: 7%;
+    margin-left: 1%;
+    border-radius: 10%;
+    width: fit-content;
+  }
+  .info{
+    bottom: 0.5%;
+  }

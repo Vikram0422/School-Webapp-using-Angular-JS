@@ -1,0 +1,110 @@
+.navigation-panel {
+    background: #fdffff;
+    overflow: hidden;
+    height: 100vh;
+    box-shadow: 5px 5px 5px 5px  #666666;
+    line-height: 1.5;
+    font-size: 1rem;
+    font-weight: 400;
+    
+    border-right:ridge ;
+    
+    
+
+ 
+    
+}
+
+
+
+.navigation-panel ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+
+
+.navigation-panel .navigation-panel-brand {
+    height: 75px;
+    line-height: 75px;
+    padding-left: 2rem;
+    font-size: 1.5rem;
+    color: rgb(0, 0, 0);
+    font-weight: 700;
+    cursor: default;
+}
+
+
+
+
+.navigation-panel .navigation-panel-brand {
+    height: 75px;
+    line-height: 75px;
+    padding-left: 2rem;
+    font-size: 1.5rem;
+    color: rgb(0, 0, 0);
+    font-weight: 700;
+}
+
+
+
+.navigation-panel .navigation-panel-menu li .active {
+    font-weight: 700;
+    background: #fffafa;
+    color: #277BC0;
+    /* box-shadow: 5px 5px 5px 5px  #666666; */
+    
+}
+
+
+
+.navigation-panel .navigation-panel-menu li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    line-height: 4rem;
+    cursor: pointer;
+    padding-left: 1.8rem;
+    font-weight: 500;
+    white-space: nowrap;
+    transition: background .2s;
+    color:rgb(0, 0, 0);
+    
+}
+
+
+a {
+    /* color: #fff; */
+    font-weight: 400;
+    text-decoration: none;
+}
+.navigation-panel .navigation-panel-menu li a i {
+    margin-right: 0.5rem;
+}
+
+.navigation-panel .navigation-panel-menu li a span.open {
+    opacity: 1;
+}
+
+.navigation-panel .navigation-panel-menu li a span {
+    transition:opacity .2s;
+}
+.navigation-panel .navigation-panel-brand span.collapse {
+    opacity: 0;
+}
+.navigation-panel .navigation-panel-menu li a span.collapse {
+    opacity: 0;
+}
+.logo{
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+

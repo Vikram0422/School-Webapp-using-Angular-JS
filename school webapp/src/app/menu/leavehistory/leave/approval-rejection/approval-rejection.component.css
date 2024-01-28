@@ -1,0 +1,22 @@
+.head{
+    text-align: center;
+    margin-top: 2%;
+}
+
+.card-img-top{
+    position: relative;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    margin-top: 2%;
+    bottom: 7px;
+}
+
+.para{
+    padding-left: 5%;
+}
+
+.button{
+    margin-left: 5%;
+    padding-bottom: -2%;
+}

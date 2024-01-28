@@ -1,0 +1,88 @@
+<mat-card class="title mat-elevation-z7"><h2>Timetable</h2>
+   <mat-form-field class="example-full-width"  appearance="fill">
+      <mat-label class="label">Choose a date</mat-label>
+      <input class="inp" matInput [matDatepickerFilter]="myFilter" [matDatepicker]="picker" [min]="minDate" disabled (dateInput)="addEvent('input', $event)" (dateChange)="addEvent('change', $event)">
+      <mat-datepicker-toggle class="toggle" matSuffix [for]="picker"></mat-datepicker-toggle>
+      <mat-datepicker #picker disabled="false"></mat-datepicker>
+    </mat-form-field>
+</mat-card>
+<div class="timetable" *ngIf="istimetable">
+  <owl-carousel-o [options]="customOptions" class="caro">
+    <ng-template carouselSlide>
+      <div class="slide-content-1">
+         <h1 class="h1">Hour<br>1</h1>
+         <h2>English</h2>
+         <h3>Handle by Dr.Rajesh</h3>
+         <p>09:00 AM - 09:50 AM</p>
+         <p class="pad">Conducted</p>
+       </div>
+    </ng-template>  
+    <ng-template carouselSlide> 
+      <div class="slide-content-2">
+         <h1 class="h1">Hour<br>2</h1>
+          <h2>Physics</h2>
+          <h3>Handle by Mr.Jachin</h3>
+          <p>09:50 AM - 10:40 AM</p>
+          <p class="pad">Conducted</p>
+       </div>
+      </ng-template>  
+    <ng-template carouselSlide> 
+      <div class="slide-content-3">
+         <h1 class="h1">Hour<br>3</h1>
+         <h2>Chemistry</h2>
+         <h3>Handle by Mr.Vikram</h3>
+         <p>10:55 AM - 11:20 AM</p>
+         <p class="pad">Conducted</p>
+       </div>
+      </ng-template>  
+    <ng-template carouselSlide>
+      <div class="slide-content-4">
+         <h1 class="h1">Hour<br>4</h1>
+          <h2>Computer Science</h2>
+          <h3>Handle by Dr.samuel</h3>
+          <p>11:20 AM - 12:00 PM</p>
+          <p class="pad">Conducted</p>
+       </div>
+    </ng-template>  
+    <ng-template carouselSlide>
+      <div class="slide-content-5">
+         <h1 class="h1">Hour<br>5</h1>
+          <h2>Computer Science</h2>
+          <h3>Handle by Dr.samuel</h3>
+          <p>12:00 PM - 12:40 PM</p>
+          <p class="pad">Conducted</p>
+       </div>
+   </ng-template>  
+    <ng-template carouselSlide>
+      <div class="slide-content-6">
+         <h1 class="h1">Hour<br>6</h1>
+          <h2>Computer Science</h2>
+          <h3>Handle by Dr.samuel</h3>
+          <p>01:30 PM - 02:20 PM</p>
+          <p class="pad">Conducted</p>
+       </div>
+    </ng-template>  
+    <ng-template carouselSlide>  
+      <div class="slide-content-7">
+         <h1 class="h1">Hour<br>7</h1>
+          <h2>Computer Science</h2>
+          <h3>Handle by Dr.samuel</h3>
+          <p>02:20 PM - 03:05 PM</p>
+          <p class="pad">Conducted</p>
+       </div>
+   </ng-template>  
+    <ng-template carouselSlide>  
+      <div class="slide-content-8">
+         <h1 class="h1">Hour<br>8</h1>
+          <h2>Computer Science</h2>
+          <h3>Handle by Dr.samuel</h3>
+          <p>03:05 PM - 04:00 PM</p>
+          <p class="pad">Conducted</p>
+       </div>
+   </ng-template>  
+  </owl-carousel-o>
+</div>
+  
+
+
+  

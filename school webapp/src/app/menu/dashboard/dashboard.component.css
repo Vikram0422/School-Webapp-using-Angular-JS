@@ -1,0 +1,43 @@
+.container.panel-position-left {
+    flex-direction: row;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+}
+
+.container .left-column.open {
+    flex: 0 0 350px;
+}
+
+.container .left-column {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    transition: flex-basis .3s;
+    overflow: hidden;
+}
+
+.container .right-column {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    overflow-y: auto;
+}
+
+.container .right-column .navigation-bar {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.container.panel-position-left {
+    flex-direction: row;
+}
+
+.container .left-column.collapse {
+    flex: 0 0 75px;
+}

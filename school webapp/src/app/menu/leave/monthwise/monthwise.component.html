@@ -1,0 +1,95 @@
+<div class="mat">
+  <mat-form-field appearance="standard" [style.width.px]=270>
+    <mat-label>From Date</mat-label>
+    <input class="inp" matInput [matDatepicker]="picker1" [min]="minDate">
+    <mat-hint>MM/DD/YYYY</mat-hint>
+    <mat-datepicker-toggle matSuffix [for]="picker1"></mat-datepicker-toggle>
+    <mat-datepicker #picker1></mat-datepicker>
+  </mat-form-field>
+</div>
+<div class="mate">
+  <mat-form-field appearance="standard" [style.width.px]=270>
+    <mat-label>To Date</mat-label>
+    <input class="inp" matInput [matDatepicker]="picker2" [min]="minDate">
+    <mat-hint>MM/DD/YYYY</mat-hint>
+    <mat-datepicker-toggle matSuffix [for]="picker2"></mat-datepicker-toggle>
+    <mat-datepicker #picker2 color="primary"></mat-datepicker>
+  </mat-form-field>
+</div>
+<div class="go">
+  <button mat-raised-button color="primary">Go</button>
+</div>
+<div class="one">
+  <mat-form-field appearance="standard" [style.width.px]=270>
+    <mat-label>Select</mat-label>
+    <mat-select>
+      <mat-option value="one">First option</mat-option>
+      <mat-option value="two">Second option</mat-option>
+    </mat-select>
+  </mat-form-field>
+</div>
+<div class="two">
+  <mat-form-field appearance="standard" [style.width.px]=270>
+    <mat-label>Select</mat-label>
+    <mat-select>
+      <mat-option value="one">First option</mat-option>
+      <mat-option value="two">Second option</mat-option>
+    </mat-select>
+  </mat-form-field>
+</div>
+<div class="search">
+  <mat-form-field [style.width.px]=270 appearance="standard" class="mat">
+    <input matInput placeholder="Search">
+    <mat-icon matPrefix>search</mat-icon>
+  </mat-form-field>
+</div>
+<div class="fil" matRipple>
+  <p>
+    <mat-icon>filter_list</mat-icon>Reset Filter
+  </p>
+</div>
+<button mat-raised-button color="primary" class="tosta">
+  <mat-icon>print</mat-icon>Today's Status
+</button>
+<button mat-raised-button color="primary" class="ovsta">
+  <mat-icon>print</mat-icon>Overall Status
+</button>
+<div class="table">
+  <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+
+    <!--- Note that these columns can be defined in any order.
+        The actual rendered columns are set as a property on the row definition" -->
+
+    <!-- Position Column -->
+    <ng-container matColumnDef="position">
+      <th mat-header-cell *matHeaderCellDef> No. </th>
+      <td mat-cell *matCellDef="let element"> {{element.position}} </td>
+    </ng-container>
+
+    <!-- Name Column -->
+    <ng-container matColumnDef="name">
+      <th mat-header-cell *matHeaderCellDef> Name </th>
+      <td mat-cell *matCellDef="let element"> {{element.name}} </td>
+    </ng-container>
+
+    <!-- Weight Column -->
+    <ng-container matColumnDef="class">
+      <th mat-header-cell *matHeaderCellDef> Class </th>
+      <td mat-cell *matCellDef="let element"> {{element.class}} </td>
+    </ng-container>
+
+    <!-- type Column -->
+    <ng-container matColumnDef="type">
+      <th mat-header-cell *matHeaderCellDef> Type </th>
+      <td mat-cell *matCellDef="let element"> {{element.type}} </td>
+    </ng-container>
+    
+    <ng-container matColumnDef="days">
+      <th mat-header-cell *matHeaderCellDef>Days Worked</th>
+      <td mat-cell *matCellDef="let element"> {{element.days}} </td>
+    </ng-container>
+
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+  </table>
+</div>

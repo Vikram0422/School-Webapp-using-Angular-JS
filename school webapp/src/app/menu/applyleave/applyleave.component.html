@@ -1,0 +1,68 @@
+<div>
+  <div>
+    <p>
+      <mat-toolbar color="primary" class="toll">
+
+        <span class="att">Apply Leave</span>
+        <span class="example-spacer"></span>
+
+      </mat-toolbar>
+    </p>
+    <mat-checkbox class="example-margin" (change)="ishalfDay($event)">Apply for Halfday</mat-checkbox>
+  </div>
+
+  <div>
+    <mat-form-field [style.width.px]=300 appearance="standard" class="ltype">
+      <mat-label>Leave Type</mat-label>
+      <mat-select>
+        <mat-option>None</mat-option>
+        <mat-option *ngFor="let class of classes" [value]="class">{{class}}</mat-option>
+      </mat-select>
+    </mat-form-field>
+  </div>
+  <div *ngIf="isDate">
+    <div class="mat">
+      <mat-form-field [style.width.px]=350 appearance="standard">
+        <mat-label>From Date</mat-label>
+        <input class="inp" matInput [matDatepicker]="picker1" [min]="minDate" disabled>
+        <mat-hint>MM/DD/YYYY</mat-hint>
+        <mat-datepicker-toggle matSuffix [for]="picker1"></mat-datepicker-toggle>
+        <mat-datepicker #picker1 disabled="false"></mat-datepicker>
+      </mat-form-field>
+    </div>
+
+    <div class="mate">
+      <mat-form-field [style.width.px]=350 appearance="standard">
+        <mat-label>To Date</mat-label>
+        <input class="inp" matInput [matDatepicker]="picker2" [min]="minDate" disabled>
+        <mat-hint>MM/DD/YYYY</mat-hint>
+        <mat-datepicker-toggle matSuffix [for]="picker2"></mat-datepicker-toggle>
+        <mat-datepicker #picker2 color="primary" disabled="false"></mat-datepicker>
+      </mat-form-field>
+    </div>
+  </div>
+
+<div *ngIf="hasDate">
+  <mat-form-field class="example-full-width" [style.width.px]=350 appearance="standard">
+    <mat-label>Choose a date</mat-label>
+    <input class="inp" matInput [matDatepicker]="picker" [min]="minDate" disabled>
+    <mat-hint>MM/DD/YYYY</mat-hint>
+    <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+    <mat-datepicker #picker disabled="false"></mat-datepicker>
+  </mat-form-field>
+</div>
+ 
+  <div class="res">
+    <mat-form-field [style.width.px]=350 class="example-full-width" appearance="standard">
+      <mat-label>
+        <mat-icon class="icon">edit</mat-icon>Reason
+      </mat-label>
+      <textarea matInput placeholder=""></textarea>
+    </mat-form-field>
+  </div>
+
+  <div class="example-button-row">
+    <button mat-flat-button color="primary" routerLink="ds">Submit</button>
+  </div>
+
+</div>

@@ -1,0 +1,82 @@
+.title{
+    width: 0;
+    color: gray;
+    font-size: 17px;
+    position: relative;
+    left: 38%;
+}
+th {
+    background-color: #21E1E1;
+    border: 1px solid #21E1E1;
+  }
+
+.mat{
+    width: 0;
+    position: relative;
+    left: 20%;
+}
+
+.mate{
+    width: 0;
+    position: relative;
+    left: 50%;
+    bottom: 7%;
+}
+
+.go{
+    width: 0;
+    position: relative;
+    left: 41%;
+    bottom: 4%;
+}
+
+.one{
+    width: 0;
+    position: relative;
+    left: 1%;
+    bottom: 1%;
+}
+
+.two{
+    width: 0;
+    position: relative;
+    left: 30%;
+    bottom: 7.8%;
+}
+
+.search{
+    width: 0;
+    position: relative;
+    left: 60%;
+    bottom: 14.5%;
+}
+
+.fil{
+    width: fit-content;
+    position: relative;
+    left: 85%;
+    color: blueviolet;
+    bottom: 18.5%;
+    cursor: pointer;
+}
+
+.tosta{
+    width: fit-content;
+    position: relative;
+    left: 65%;
+    bottom: 3%;
+
+}
+
+.ovsta{
+    width: fit-content;
+    position: relative;
+    left: 70%;
+    bottom: 3%;
+
+}
+table{
+    width: 95%;
+    margin-left: 2%;
+    margin-bottom: 7%;
+}
